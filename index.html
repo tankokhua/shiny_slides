@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pitch for Shiny Project</title>
+  <title>Exploratory Study of 'mtcars' using Linear Regressions</title>
   <meta charset="utf-8">
-  <meta name="description" content="Pitch for Shiny Project">
+  <meta name="description" content="Exploratory Study of 'mtcars' using Linear Regressions">
   <meta name="author" content="tankokhua">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,8 +32,8 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Pitch for Shiny Project</h1>
-    <h2>Subtitle</h2>
+    <h1>Exploratory Study of 'mtcars' using Linear Regressions</h1>
+    <h2>A Shiny App</h2>
     <p>tankokhua<br/>Engineer</p>
   </hgroup>
   <article></article>  
@@ -43,13 +43,14 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Introduction</h2>
   </hgroup>
   <article data-timings="">
     <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
+<li>Shiny App</li>
+<li>&#39;mtcars&#39; dataset</li>
+<li>Linear Regression</li>
+<li>Running the App</li>
 </ol>
 
   </article>
@@ -58,10 +59,130 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Shiny App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>A &#39;Shiny&#39; app is used to build the user interface to study &#39;mtcars&#39; dataset.</li>
+<li>The objective is to study the impact of certain aspects of the car designs on fuel consumption.</li>
+<li>This app helps the user to perform quick first pass analysis to determine the possible
+regressors.</li>
+<li>A &#39;Shiny&#39; app can be built with minimal effort.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>&#39;mtcars&#39; dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>The &#39;mtcars&#39; dataset has 11 variables.</li>
+</ol>
+
+<pre><code>##  [1] &quot;mpg&quot;  &quot;cyl&quot;  &quot;disp&quot; &quot;hp&quot;   &quot;drat&quot; &quot;wt&quot;   &quot;qsec&quot; &quot;vs&quot;   &quot;am&quot;   &quot;gear&quot;
+## [11] &quot;carb&quot;
+</code></pre>
+
+<p>A data frame with 32 observations on 11 variables.</p>
+
+<table><thead>
+<tr>
+<th>Abbrev.</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mpg</td>
+<td>Miles/(US) gallon</td>
+</tr>
+<tr>
+<td>cyl</td>
+<td>Number of cylinders</td>
+</tr>
+<tr>
+<td>disp</td>
+<td>Displacement (cu.in.)</td>
+</tr>
+<tr>
+<td>hp</td>
+<td>Gross horsepower</td>
+</tr>
+<tr>
+<td>drat</td>
+<td>Rear axle ratio</td>
+</tr>
+<tr>
+<td>wt</td>
+<td>Weight (lb/1000)</td>
+</tr>
+<tr>
+<td>qsec</td>
+<td>1/4 mile time</td>
+</tr>
+<tr>
+<td>vs</td>
+<td>V/S</td>
+</tr>
+<tr>
+<td>am</td>
+<td>Transmission (0 = automatic, 1 = manual)</td>
+</tr>
+<tr>
+<td>gear</td>
+<td>Number of forward gears</td>
+</tr>
+<tr>
+<td>carb</td>
+<td>Number of carburetors</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Linear Regression</h2>
   </hgroup>
   <article data-timings="">
     
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Running the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./regressors.png" alt="alt Input ">
+<img src="./formula.png" alt="alt Input "></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Results</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>The output panel consists of
+
+<ul>
+<li>Coefficients of linear regression</li>
+<li>Residual Plots</li>
+</ul></li>
+<li>The coefficients show which regressors are significant.</li>
+<li>The residual plots give an indication of the &#39;correctness&#39; of the model.</li>
+</ol>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +193,38 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Introduction'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Shiny App'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='&#39;mtcars&#39; dataset'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Linear Regression'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Running the App'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Results'>
+         6
       </a>
     </li>
   </ul>

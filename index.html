@@ -50,7 +50,10 @@
 <li>Shiny App</li>
 <li>&#39;mtcars&#39; dataset</li>
 <li>Linear Regression</li>
+<li>User Interface</li>
 <li>Running the App</li>
+<li>Results</li>
+<li>Conclusion</li>
 </ol>
 
   </article>
@@ -63,7 +66,7 @@
   </hgroup>
   <article data-timings="">
     <ol>
-<li>A &#39;Shiny&#39; app is used to build the user interface to study &#39;mtcars&#39; dataset.</li>
+<li>A &#39;Shiny&#39; (<a href="http://shiny.rstudio.com">http://shiny.rstudio.com</a>) app is used to build the user interface to study &#39;mtcars&#39; dataset.</li>
 <li>The objective is to study the impact of certain aspects of the car designs on fuel consumption.</li>
 <li>This app helps the user to perform quick first pass analysis to determine the possible
 regressors.</li>
@@ -150,7 +153,24 @@ regressors.</li>
     <h2>Linear Regression</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ul>
+<li>In this app, linear regression is used to predict a response variable from one or more
+predictor variables or regressors.</li>
+<li>The objective is to identify the potential regressors which can be used to provide an equation
+for predicting the response variable, in this case, &#39;mpg&#39;.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>User Interface</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./interface.png" alt="alt Input "></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -160,8 +180,13 @@ regressors.</li>
     <h2>Running the App</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="./regressors.png" alt="alt Input ">
-<img src="./formula.png" alt="alt Input "></p>
+    <ul>
+<li>Open the &quot;server.R&quot; or &quot;ui.R&quot; file from R Studio</li>
+<li>Click on &quot;Run App&quot; button to launch the application.</li>
+<li>Select one or more regressors/predictors.</li>
+<li>The formula for linear regression will be displayed.</li>
+<li>Click on &quot;Go!&quot; Button to generate the regression coefficients and residual plots.</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -179,9 +204,31 @@ regressors.</li>
 <li>Coefficients of linear regression</li>
 <li>Residual Plots</li>
 </ul></li>
-<li>The coefficients show which regressors are significant.</li>
+<li>The coefficients show which regressors may be significant in explaining the model.</li>
 <li>The residual plots give an indication of the &#39;correctness&#39; of the model.</li>
 </ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This is a simple illustration of developing data products using 
+
+<ul>
+<li>Shiny App to create the user interface</li>
+<li>Slidify (<a href="http://slidify.github.io">http://slidify.github.io</a>) to pitch about the data product.</li>
+</ul></li>
+<li>Developers can dedicate more time on the research topics, and make use of these
+efficient tools to produce impressive presentations/products.</li>
+</ul>
+
+<h3>Note: This presentation deck is built using &quot;Slidify&quot;.</h3>
 
   </article>
   <!-- Presenter Notes -->
@@ -217,14 +264,26 @@ regressors.</li>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Running the App'>
+        data-slide=5 title='User Interface'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Results'>
+        data-slide=6 title='Running the App'>
          6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Results'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Conclusion'>
+         8
       </a>
     </li>
   </ul>

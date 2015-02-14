@@ -16,11 +16,14 @@ knit        : slidify::knit2slides
 1. Shiny App
 2. 'mtcars' dataset
 3. Linear Regression
-3. Running the App
+4. User Interface
+5. Running the App
+6. Results
+7. Conclusion
 
 --- .class #id 
 ## Shiny App
-1. A 'Shiny' app is used to build the user interface to study 'mtcars' dataset.
+1. A 'Shiny' (http://shiny.rstudio.com) app is used to build the user interface to study 'mtcars' dataset.
 2. The objective is to study the impact of certain aspects of the car designs on fuel consumption.
 3. This app helps the user to perform quick first pass analysis to determine the possible
    regressors.
@@ -50,19 +53,39 @@ A data frame with 32 observations on 11 variables.
 
 --- .class #id 
 ## Linear Regression
+* In this app, linear regression is used to predict a response variable from one or more
+  predictor variables or regressors.
+* The objective is to identify the potential regressors which can be used to provide an equation
+  for predicting the response variable, in this case, 'mpg'.
+
+--- .class #id 
+## User Interface
+![alt Input ](./interface.png)
 
 --- .class #id 
 ## Running the App
-![alt Input ](./regressors.png)
-![alt Input ](./formula.png)
+* Open the "server.R" or "ui.R" file from R Studio
+* Click on "Run App" button to launch the application.
+* Select one or more regressors/predictors.
+* The formula for linear regression will be displayed.
+* Click on "Go!" Button to generate the regression coefficients and residual plots.
 
 --- .class #id 
 ## Results
 1. The output panel consists of
   + Coefficients of linear regression
   + Residual Plots
-2. The coefficients show which regressors are significant.
+2. The coefficients show which regressors may be significant in explaining the model.
 3. The residual plots give an indication of the 'correctness' of the model.
 
+--- .class #id 
+## Conclusion
+* This is a simple illustration of developing data products using 
+  + Shiny App to create the user interface
+  + Slidify (http://slidify.github.io) to pitch about the data product.
+* Developers can dedicate more time on the research topics, and make use of these
+  efficient tools to produce impressive presentations/products.
+
+### Note: This presentation deck is built using "Slidify".
 
 
